@@ -1,0 +1,78 @@
+@include sticky-footer(150px, "#main", "#main_footer", "footer");
+
+footer {
+	background-color: $brandPurple;
+	color: white;
+	font-size: 12px;
+	text-transform: uppercase;
+	.max-container {
+		position:relative;
+  		z-index:1000;
+	}
+	.social-icons {
+		margin-top: 50px;
+		display: inline-block;
+		a {
+			text-decoration: none;
+			color: white;
+		}
+		.icon {
+			border: 2px solid white;
+			width: 33px;
+			height: 33px;
+			border-radius: 50%;
+			text-align: center;
+			line-height: 33px;
+			margin-right: 5px;
+			@include float-left();
+			i {
+				font-size: 15px;
+				margin-top: 9px;
+				margin-left: 2px;
+			}
+			&:hover {
+				background-color: white;
+				color: $brandPurple;
+			}
+		}
+	}
+	.footer-copy {
+		width: 100%;
+		.copyright {
+			margin-top: 15px;
+			@include float-left();
+			text-transform: capitalize;
+			a {
+				font-weight: 600;
+				color: white;
+			}
+		}
+		ul {
+			@include float-right;
+			margin-top: 15px;
+			li {
+				@include float-left();
+				margin-left: 20px;
+				a {
+					color: white;
+					text-decoration: none;
+					display: block;
+					&:hover {
+						color: darken(white, 10);
+					}
+				}
+			}
+		}
+	}
+}
+
+footer::after {
+	content: "";
+	background: url(/wp-content/themes/hunter_dunning/images/footermask.png);
+	opacity: 0.1;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+}

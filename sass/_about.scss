@@ -1,0 +1,171 @@
+.body-container {
+	width: 750px;
+	margin: 0 auto;
+	padding: 104px 0 140px 0;
+	p {
+		font-family: $copyFont;
+		font-size: 15px;
+		color: $copyColor;
+		margin-bottom: 46px;
+		line-height: 27px;
+	}
+}
+
+.top-bottom-padding {
+	padding: 104px 70px 140px 70px !important;
+}
+
+.spacer-line {
+	width: 100px;
+	height: 2px;
+	background-color: $brandPurple;
+	margin-top: 24px;
+	margin-bottom: 62px;
+}
+
+#intro {
+	background-color: white;
+	overflow: auto;
+	.body-container {
+		background-image: url(/wp-content/themes/hunter_dunning/images/intro_image.svg);
+		background-repeat: no-repeat;
+		background-position: right bottom;
+	}
+}
+
+#reasons {
+	background-color: $brandOffWhite;
+	h2 {
+		color: $brandPurple;
+	}
+	.spacer-line {
+		background-color: $brandGray;
+	}
+}
+
+#testimonials {
+	background-color: white;
+	background-image: url(/wp-content/themes/hunter_dunning/images/testimonial_image.svg);
+	background-position: left bottom;
+	background-repeat: repeat-x;
+	background-position: -70px 100%;
+	@include clearfix();
+	.spacer-line {
+		background-color: $brandGreen;
+	}
+	.body-container {
+		overflow: hidden;
+	}
+	.testimonials-holder {
+		width: 100000000px;
+		@include clearfix();
+		margin-left: 0;
+	}
+	.testimonial-item {
+		background-color: white;
+		@include float-left();
+		width: 750px;
+		h3 {
+			color: $brandGrayL;
+			margin-bottom: 34px;
+		}
+		.testimonial-name {
+			color: $brandGray;
+			font-size: 12px;
+		}
+	}
+	.testimonial-nav {
+		margin-top: 34px;
+		li {
+			background-color: $brandOffWhite;
+			border-radius: 50%;
+			width: 13px;
+			height: 13px;
+			float: left;
+			margin-right: 5px;
+			border: 2px solid $brandOffWhite;
+			&:hover {
+				cursor: pointer;
+				border-color: $brandGreen;
+			}
+		}
+		.active {
+			border: 2px solid $brandGreen;
+		}
+	}
+	.testimonial-nav-arrows {
+		.arrow {
+			width: 50px;
+			height: 50px;
+			@include rotate(-45deg);
+			margin-top: -35%;
+			&:hover {
+				cursor: pointer;
+				border-color: $brandGreen;
+			}
+		}
+		.left {
+			@include float-left();
+			border-left: 1px solid #C2C2C2;
+			border-top: 1px solid #C2C2C2;
+		}
+		.right {
+			@include float-right();
+			border-right: 1px solid #C2C2C2;
+			border-bottom: 1px solid #C2C2C2;
+		}
+	}
+}
+
+#meet_the_team {
+	background-color: $brandOffWhite;
+	h2 {
+		text-align: center;
+	}
+	.spacer-line {
+		margin-left: auto;
+		margin-right: auto;
+		background-color: $brandPurple;
+	}
+	.team-members {
+		@include clearfix();
+		max-width: 1124px;
+		width: 100%;
+		margin: auto;
+		ul {
+			li {
+				@include float-left();
+				width: 21%;
+				padding: 2%;
+				ul li {
+					padding: 0;
+				}
+				img {
+					width: 100%;
+					max-width: 100%;
+					margin-bottom: 28px;
+				}
+				.name {
+					font-family: $copyFont;
+					font-size: 15px;
+					color: black;
+					margin-bottom: 16px;
+					width: 100%;
+				}
+				.job-title {
+					color: #7b7b7b;
+					font-size: 15px;
+					margin-bottom: 30px;
+					width: 100%;
+				}
+				.desc {
+					font-family: $copyFont;
+					font-size: 15px;
+					color: $brandGray;
+					line-height: 27px;
+					width: 100%;
+				}
+			}
+		}
+	}
+}

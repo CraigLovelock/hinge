@@ -1,0 +1,102 @@
+header {
+	height: $headerHeight;
+	width: 100%;
+	border-bottom: 2px solid $brandPurple;
+	position: fixed;
+	background-color: #fff;
+	z-index: 250;
+	.logo {
+		float: left;
+		margin-top: 27px;
+		background: url(/wp-content/themes/hunter_dunning/images/svg_logo.svg) no-repeat;
+		background-size: 155px 49px;
+		width: 155px;
+		height: 49px;
+	}
+	.simple-icon {
+		float: left;
+		background: url(/wp-content/themes/hunter_dunning/images/simple_icon.svg) no-repeat;
+		background-size: 36px 36px;
+		width: 36px;
+		height: 36px;
+		opacity: 0;
+		position: absolute;
+		top: 7px;
+	}
+	nav {
+		float: right;
+		height: $headerHeight;
+		line-height: $headerHeight;
+		float: right;
+		ul {
+			li {
+				display: inline-block;
+				font-family: $navFont;
+				font-size: 16px;
+				color: $navColour;
+				margin-right: 26px;
+				a {
+					color: $navColour;
+					text-decoration: none;
+					&:hover {
+						color: lighten($navColour, 50);
+					}
+				}
+			}
+			.contact-number {
+				a {
+					i {
+						padding: 5px 15px;
+						border: 2px solid black;
+						font-size: 18px;
+						display: none;
+						margin-top: 36px;
+					}
+				}
+				&:hover {
+					i {
+						border-color: lighten($navColour, 50);
+					}
+				}
+			}
+			.nav-seperator {
+				font-size: 8px;
+				color: $brandGreen;
+			}
+		}
+	}
+	.menu_collapse_icon_label {
+		width: 33px;
+		height: 16px;
+		border: 2px solid black;
+		@include float-right();
+		margin-top: 36px;
+		padding: 6px 9px 6px 2px;
+		text-align: right;
+		display: inline-block;
+		&:hover {
+			cursor: pointer;
+			border-color: lighten($navColour, 50);
+			.menu_bar {
+				border-color: lighten($navColour, 50);
+			}
+		}
+		.menu_bar {
+			padding-top: 5px;
+			width: 80%;
+			display: inline-block;
+			border-top: 2px solid #454545;
+			box-sizing: border-box;
+		}
+	}
+}
+
+/**@media
+	(-webkit-min-device-pixel-ratio: 2),
+	(min-resolution: 192dpi) {
+    header {
+    	.logo {
+    		background: url(/wp-content/themes/hunter_dunning/images/Logo@2x.png) no-repeat;
+    	}
+    }
+}**/

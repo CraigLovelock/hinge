@@ -1,0 +1,149 @@
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    #meet_the_team {
+        .team-members {
+            ul {
+                li {
+                    width: 27%;
+                    padding: 3%;
+                }
+            }
+        }
+    }
+    .two-cols {
+        p {
+            margin-left: 38px;
+        }
+    }
+    .col-num-title {
+        margin-left: 0;
+    }
+    #testimonials {
+        .testimonial-item {
+
+        }
+        .testimonial-nav-arrows {
+            display: none;
+        }
+    }
+    footer {
+        height: auto;
+        padding: 38px 0;
+        .social-icons {
+            width: 126px;
+            margin: 0 auto;
+            display: block;
+        }
+        .footer-copy {
+            width: 100%;
+            display: inline-block;
+            .copyright {
+                float: none;
+                text-align: center;
+            }
+            ul {
+                left: 0;
+                width: 100%;
+                text-align: center;
+                li {
+                    margin: 0 10px 10px 10px;
+                    float: none;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+    .no-small-desktop {
+        display: none;
+    }
+    .small-screen-only {
+        display: block !important;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    #meet_the_team {
+        .team-members {
+            ul {
+                li {
+                    width: 42%;
+                    padding: 4%;
+                }
+            }
+        }
+    }
+    .body-container {
+        width: 92%;
+        padding: 104px 4% 140px 4%;
+    }
+    .two-cols {
+        width: 100%;
+        margin-right: 0;
+    }
+    .col-num-title {
+        margin-left: 0;
+    }
+    .contact-number {
+        a {
+            span {
+                display: none;
+            }
+            i {
+                display: block !important;
+            }
+        }
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    .body-container {
+        padding: 66px 0 50px 0;
+        background-image: none !important;
+    }
+    .max-container {
+        padding: 0 4% !important;
+        width: 92%;
+    }
+    #testimonials {
+        background-image: none !important;
+    }
+    #meet_the_team {
+        .max-container {
+            padding: 66px 4% 50px 4% !important;
+            width: 92%;
+        }
+        .team-members {
+            ul {
+                li {
+                    width: 92%;
+                    padding: 4%;
+                    img {
+                        width: 45%;
+                        margin-right: 10%;
+                        float: left;
+                        display: inline;
+                    }
+                    ul {
+                        width: auto;
+                        float: left;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+.small-screen-only {
+    display: none;
+}

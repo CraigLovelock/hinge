@@ -1,0 +1,44 @@
+/*!
+Theme Name: Hunter Dunning
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0
+License: GNU General Public License
+License URI: license.txt
+Tags:
+*/
+
+@import "compass/reset";
+@import "compass/utilities/general/float";
+@import "compass/layout";
+@import "compass/utilities/general/clearfix";
+@import "compass/css3";
+
+@import "_variables";
+@import "_header";
+@import "_footer";
+@import "_about";
+@import "_typography";
+@import "_grid";
+@import "_side-navigation";
+
+body, html {
+	width: 100%;
+	font-family: $copyFont;
+}
+
+#main {
+	padding-top: 105px;
+	padding-bottom: 105px;
+}
+
+.max-container {
+	max-width: 1440px;
+	padding: 0 70px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@import "_responsive";

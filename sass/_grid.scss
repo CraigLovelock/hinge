@@ -1,0 +1,25 @@
+.column-container {
+	width: 100%;
+}
+
+.column-container:after {
+    content:"";
+    display:table;
+    clear:both;
+}
+
+.two-cols {
+	width: 42%;
+	float: left;
+	margin-right: 8%;
+}
+
+.col-num-title {
+	margin-left: -38px;
+	margin-bottom: 26px;
+	span {
+		color: $brandPurple;
+		margin-right: 28px;
+		text-align: right;
+	}
+}
