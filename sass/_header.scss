@@ -8,14 +8,14 @@ header {
 	.logo {
 		float: left;
 		margin-top: 27px;
-		background: url(/wp-content/themes/hunter_dunning/images/svg_logo.svg) no-repeat;
+		background: url(/hinge/wp-content/themes/hunter_dunning/images/svg_logo.svg) no-repeat;
 		background-size: 155px 49px;
 		width: 155px;
 		height: 49px;
 	}
 	.simple-icon {
 		float: left;
-		background: url(/wp-content/themes/hunter_dunning/images/simple_icon.svg) no-repeat;
+		background: url(/hinge/wp-content/themes/hunter_dunning/images/simple_icon.svg) no-repeat;
 		background-size: 36px 36px;
 		width: 36px;
 		height: 36px;
@@ -90,13 +90,3 @@ header {
 		}
 	}
 }
-
-/**@media
-	(-webkit-min-device-pixel-ratio: 2),
-	(min-resolution: 192dpi) {
-    header {
-    	.logo {
-    		background: url(/wp-content/themes/hunter_dunning/images/Logo@2x.png) no-repeat;
-    	}
-    }
-}**/

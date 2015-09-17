@@ -5,6 +5,8 @@ footer {
 	color: white;
 	font-size: 12px;
 	text-transform: uppercase;
+	overflow: hidden;
+	z-index: 50;
 	.max-container {
 		position:relative;
   		z-index:1000;
@@ -41,7 +43,7 @@ footer {
 		.copyright {
 			margin-top: 15px;
 			@include float-left();
-			text-transform: capitalize;
+			text-transform: uppercase;
 			a {
 				font-weight: 600;
 				color: white;
@@ -66,9 +68,18 @@ footer {
 	}
 }
 
+.footer-edge {
+	background: url(/hinge/wp-content/themes/hunter_dunning/images/footeredges.png) no-repeat;
+    width: 1350;
+    height: 136px;
+    position: absolute;
+    top: -70px;
+    margin: 0 auto;
+}
+
 footer::after {
 	content: "";
-	background: url(/wp-content/themes/hunter_dunning/images/footermask.png);
+	background: url(/hinge/wp-content/themes/hunter_dunning/images/footermask.png);
 	opacity: 0.1;
 	top: 0;
 	left: 0;

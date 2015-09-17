@@ -1,4 +1,5 @@
 $(function(){
+    FastClick.attach(document.body);
 
     jQuery(document.body).on('click touchstart', '.testimonial-nav li', function(e){
         var requestId = $(this).attr('id');
@@ -7,21 +8,56 @@ $(function(){
         $(this).addClass('active');
     });
 
-    jQuery(document.body).on("swipe", ".testimonial-item",function(){
-        changeTestimonial(1);
-        $(".testimonial-nav li").removeClass('active');
-        $(this).addClass('active');
+    $(".testimonials-holder").swipe( {
+        swipeLeft:function() {
+            nextTestimonial();
+        },
+        swipeRight:function() {
+            prevTestimonial();
+        },
+        threshold:0
     });
 
     function changeTestimonial(requestId)
     {
-        var adjustMargin = requestId * 750;
-        $('.testimonials-holder').animate({'margin-left': '-'+adjustMargin+'px'});
+        $(".testimonials-holder .active").fadeOut(function(){
+            $(".testimonials-holder li[data-testimonialId="+requestId+"]").fadeIn().addClass('active');
+        }).removeClass('active');
+    }
+
+    $('.prev-testimonial').on('click', function(){
+        prevTestimonial();
+    });
+
+    $('.next-testimonial').on('click', function(){
+        nextTestimonial();
+    });
+
+    function nextTestimonial() {
+        var active = $('.testimonials-holder .active');
+        var prev = (active.is(":last-child") ? $('.testimonials-holder li:first-child'): active.next());
+        active.fadeOut(function(){
+            $(".testimonial-nav .active").removeClass('active');
+            prev.fadeIn().addClass('active');
+            var newID = $(".testimonials-holder .active").attr('data-testimonialId');
+            $(".testimonial-nav #"+newID).addClass('active');
+        }).removeClass('active');
+    }
+
+    function prevTestimonial() {
+        var active = $('.testimonials-holder .active');
+        var prev = (active.index() == 0 ? $('.testimonials-holder li:last-child'): active.prev());
+        active.fadeOut(function(){
+            $(".testimonial-nav .active").removeClass('active');
+            prev.fadeIn().addClass('active');
+            var newID = $(".testimonials-holder .active").attr('data-testimonialId');
+            $(".testimonial-nav #"+newID).addClass('active');
+        }).removeClass('active');
     }
 
     $(function(){
         $('header').data('size','big');
-  });
+    });
 
     $(window).scroll(function(){
       if($(document).scrollTop() > 100)

@@ -48,5 +48,4 @@
 	z-index: 100;
 	display: none;
 	@include transition-property(opacity);
-	@include transition-duration(0.6s);
 }

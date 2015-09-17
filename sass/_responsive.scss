@@ -33,6 +33,9 @@
     footer {
         height: auto;
         padding: 38px 0;
+        .footer-edge {
+            display: none;
+        }
         .social-icons {
             width: 126px;
             margin: 0 auto;
@@ -103,36 +106,61 @@
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
     .body-container {
-        padding: 66px 0 50px 0;
+        padding: 66px 0 50px 0 !important;
         background-image: none !important;
     }
     .max-container {
         padding: 0 4% !important;
         width: 92%;
     }
+    .two-cols {
+        h3 {
+            span {
+                display: none;
+            }
+        }
+        p {
+            margin-left: 0;
+        }
+        .col-num-title {
+            margin-bottom: 10px;
+        }
+    }
     #testimonials {
         background-image: none !important;
+        .body-container {
+            padding: 66px 0 90px 0 !important;
+        }
     }
     #meet_the_team {
         .max-container {
-            padding: 66px 4% 50px 4% !important;
+            padding: 66px 4% 80px 4% !important;
             width: 92%;
         }
         .team-members {
             ul {
                 li {
                     width: 92%;
-                    padding: 4%;
-                    img {
-                        width: 45%;
-                        margin-right: 10%;
-                        float: left;
-                        display: inline;
-                    }
-                    ul {
-                        width: auto;
-                        float: left;
-                    }
+                    list-style-type: none;
+                    float: none;
+                    margin-bottom: 20px;
+                }
+                img {
+                    width: 47% !important;
+                    margin-right: 8%;
+                    display: inline;
+                    float: left;
+                    margin-bottom: 0 !important;
+                }
+                .name {
+                    width: 40% !important;
+                    float: left;
+                }
+                .job-title {
+                    width: 40% !important;
+                    float: left;
+                }
+                .desc {
                 }
             }
         }

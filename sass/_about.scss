@@ -27,9 +27,10 @@
 	background-color: white;
 	overflow: auto;
 	.body-container {
-		background-image: url(/wp-content/themes/hunter_dunning/images/intro_image.svg);
+		background-image: url(/hinge/wp-content/themes/hunter_dunning/images/intro_image.svg);
 		background-repeat: no-repeat;
 		background-position: right bottom;
+		padding-bottom: 70px;
 	}
 }
 
@@ -38,6 +39,9 @@
 	h2 {
 		color: $brandPurple;
 	}
+	.body-container {
+		padding-bottom: 70px;
+	}
 	.spacer-line {
 		background-color: $brandGray;
 	}
@@ -45,10 +49,10 @@
 
 #testimonials {
 	background-color: white;
-	background-image: url(/wp-content/themes/hunter_dunning/images/testimonial_image.svg);
+	background-image: url(/hinge/wp-content/themes/hunter_dunning/images/testimonial_image.svg);
 	background-position: left bottom;
 	background-repeat: repeat-x;
-	background-position: -70px 100%;
+	background-position: -70px 100.2%;
 	@include clearfix();
 	.spacer-line {
 		background-color: $brandGreen;
@@ -56,22 +60,30 @@
 	.body-container {
 		overflow: hidden;
 	}
-	.testimonials-holder {
-		width: 100000000px;
-		@include clearfix();
-		margin-left: 0;
-	}
-	.testimonial-item {
-		background-color: white;
-		@include float-left();
-		width: 750px;
-		h3 {
-			color: $brandGrayL;
-			margin-bottom: 34px;
+	ul.testimonials-holder {
+		width: 100%;
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		li {
+			display: none;
+			background-color: white;
+			h3 {
+				color: $brandGrayL;
+				font-weight: 200;
+				margin-bottom: 34px;
+				font-style: italic;
+			}
+			.testimonial-name {
+				color: $brandGray;
+				font-size: 12px;
+			}
 		}
-		.testimonial-name {
-			color: $brandGray;
-			font-size: 12px;
+		.active {
+			display: block;
 		}
 	}
 	.testimonial-nav {
@@ -98,7 +110,7 @@
 			width: 50px;
 			height: 50px;
 			@include rotate(-45deg);
-			margin-top: -35%;
+			margin-top: -300px;
 			&:hover {
 				cursor: pointer;
 				border-color: $brandGreen;
@@ -129,7 +141,7 @@
 	}
 	.team-members {
 		@include clearfix();
-		max-width: 1124px;
+		max-width: 1000px;
 		width: 100%;
 		margin: auto;
 		ul {
