@@ -55,7 +55,7 @@ $(function(){
         }).removeClass('active');
     }
 
-    jQuery(document.body).on('click touchstart', '.menu_bar', function(e){
+    jQuery(document.body).on('click touchstart', '.menu-icon-wrapper', function(e){
         $(".menu_collapse_icon_label").click();
     });
 
