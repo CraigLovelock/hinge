@@ -6,7 +6,7 @@ var compass = require('gulp-compass');
 var notify  = require('gulp-notify');
 
 gulp.task('js', function () {
-    return gulp.src(['js/fastClick.js', 'js/touchSwipe.js', 'js/app.js'])
+    return gulp.src(['js/app.js'])
         .pipe(concat('app.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest('js'))
