@@ -15,7 +15,7 @@ $(function(){
         swipeRight:function() {
             prevTestimonial();
         },
-        threshold:0
+        threshold:75
     });
 
     function changeTestimonial(requestId)
