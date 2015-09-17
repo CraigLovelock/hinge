@@ -8,7 +8,7 @@
 			<ul>
 				<?php for($i=0; $i < 4; $i++) { ?>
 				<li>
-					<img src="/wp-content/themes/hunter_dunning/images/male_image.png" alt="team member headshot">
+					<img src="/hinge/wp-content/themes/hunter_dunning/images/male_image.png" alt="team member headshot">
 					<ul>
 						<li class="name">JOHN SMITH</li>
 						<li class="job-title">Job Title</li>
@@ -16,7 +16,7 @@
 					</ul>
 				</li>
 				<li>
-					<img src="/wp-content/themes/hunter_dunning/images/female_image.png" alt="team member headshot">
+					<img src="/hinge/wp-content/themes/hunter_dunning/images/female_image.png" alt="team member headshot">
 					<ul>
 						<li class="name">JOANNA MARKS</li>
 						<li class="job-title">Job Title</li>
