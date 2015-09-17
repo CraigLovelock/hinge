@@ -25,11 +25,11 @@ $(function(){
         }).removeClass('active');
     }
 
-    $('.prev-testimonial').on('click', function(){
+    jQuery(document.body).on('click touchstart', '.prev-testimonial', function(e){
         prevTestimonial();
     });
 
-    $('.next-testimonial').on('click', function(){
+    jQuery(document.body).on('click touchstart', '.next-testimonial', function(e){
         nextTestimonial();
     });
 
@@ -54,6 +54,10 @@ $(function(){
             $(".testimonial-nav #"+newID).addClass('active');
         }).removeClass('active');
     }
+
+    jQuery(document.body).on('click touchstart', '.menu_bar', function(e){
+        $(".menu_collapse_icon_label").click();
+    });
 
     $(function(){
         $('header').data('size','big');

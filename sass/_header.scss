@@ -73,7 +73,7 @@ header {
 		margin-top: 36px;
 		padding: 6px 9px 6px 2px;
 		text-align: right;
-		display: inline-block;
+		display: block;
 		&:hover {
 			cursor: pointer;
 			border-color: lighten($navColour, 50);
