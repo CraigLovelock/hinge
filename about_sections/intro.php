@@ -14,8 +14,8 @@
 			Our unique services are offered at all levels of Architecture, from Junior Architectural Technicians and Architectural Assistants to Project Architects and Design Managers in Private Practice, Developers and within the Public Sector both in the UK and Internationally.
 		</p>
 		<p>
-			With 360° of quality, service excellence and industry<br>
-			knowledge, the specialists at Hunter Dunning<br>
+			With 360° of quality, service excellence and industry <span class="line-break"></span>
+			knowledge, the specialists at Hunter Dunning <span class="line-break"></span>
 			cover every angle.
 		</p>
 	</div>

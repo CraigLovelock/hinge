@@ -113,6 +113,9 @@
         padding: 0 4% !important;
         width: 92%;
     }
+    .line-break {
+        display: none;
+    }
     .two-cols {
         h3 {
             span {
@@ -170,8 +173,4 @@
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
 
-}
-
-.small-screen-only {
-    display: none;
 }
