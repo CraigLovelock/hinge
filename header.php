@@ -18,15 +18,8 @@
 				<div class="simple-icon"></div>
 			</a>
 
-			<div class="menu-icon-wrapper">
-				<label for="menu_collapse_icon" class="menu_collapse_icon_label">
-					<div class="menu_bar">
-						<div class="menu_bar">
-							<div class="menu_bar"></div>
-						</div>
-					</div>
-				</label>
-			</div>
+			<label for="menu_collapse_icon" class="menu_collapse_icon_label">
+			</label>
 
 			<nav>
 				<ul>

@@ -38,6 +38,7 @@ header {
 				a {
 					color: $navColour;
 					text-decoration: none;
+					@include transition(color 600ms);
 					&:hover {
 						color: lighten($navColour, 50);
 					}
@@ -66,27 +67,19 @@ header {
 		}
 	}
 	.menu_collapse_icon_label {
-		width: 33px;
-		height: 16px;
-		border: 2px solid black;
+		background: url(/hinge/wp-content/themes/hunter_dunning/images/nav_icon.svg) no-repeat;
+		background-size: 44px 32px;
+		width: 44px;
+		height: 32px;
 		@include float-right();
-		margin-top: 36px;
-		padding: 6px 9px 6px 2px;
 		text-align: right;
 		display: block;
+		margin-top: 36px;
+		opacity: 1;
+		@include transition(opacity 600ms);
 		&:hover {
 			cursor: pointer;
-			border-color: lighten($navColour, 50);
-			.menu_bar {
-				border-color: lighten($navColour, 50);
-			}
-		}
-		.menu_bar {
-			padding-top: 5px;
-			width: 80%;
-			display: inline-block;
-			border-top: 2px solid #454545;
-			box-sizing: border-box;
+			opacity: 0.4;
 		}
 	}
 }
